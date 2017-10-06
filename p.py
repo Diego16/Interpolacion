@@ -22,7 +22,7 @@ s = np.array([ 12.202,12.279,12.293,12.222])#Ojo
 f = np.array([ 12.663,12.720,12.826,12.886])#Ojo
 g = np.array([ 12.202,12.130,12.143,12.222])#Ojo
 # Interpolate the data using a cubic spline to "new_length" samples
-new_length = 30#Se establece el numero de puntos resultantes de la interpolacion de los puntos que van a conformar
+new_length = 50 #Se establece el numero de puntos resultantes de la interpolacion de los puntos que van a conformar
 new_x = np.linspace(x.min(), x.max(), new_length)#ParteSuperior
 new_y = sp.interpolate.interp1d(x, y, kind='cubic')(new_x)#ParteSuperior
 
